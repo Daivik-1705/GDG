@@ -154,13 +154,15 @@ body {
 
 .image {
   width: 100%;
-  max-width: 500px;
+  max-width: 1000px;
   object-fit: contain;
 }
-.group6,.ellipse,.email {
-  width: 25%;
+.email {
+  width: 10%;
 }
-
+.group6,.ellipse{
+  width:20%;
+}
 .email {
   background-color: #f28a00;
   padding: 3px 6px;
@@ -186,23 +188,23 @@ body {
 
 .badge.top-left {
   top: 10%;
-  left: 30%;
+  left: 20%;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
   height: 50px;
   width: 120px;
-  font-size: large;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .badge.bottom-left {
-  bottom: 10%;
-  left: 20%;
+  bottom: 0%;
+  left: 10%;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
-  font-size: large;
+  font-size: small;
   text-align: center;
 }
 
@@ -223,11 +225,11 @@ body {
 }
 
 .badge.bottom-right {
-  bottom: 10%;
-  right: 20%;
+  bottom: 12%;
+  right: 12%;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(20px);
-  font-size: large;
+  font-size: small;
 }
 
 .hero-bottom p {

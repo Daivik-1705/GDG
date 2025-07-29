@@ -49,8 +49,7 @@ body, html {
 
 .vc2 img
 {
-  margin-left: 50%;
-  margin-right: 50%;
+  margin:50px;
   justify-content: center;
   padding: 0;
 }

@@ -1153,8 +1153,8 @@ body.dark .hero-image .badge.bottom-left span , .dark .badge.bottom-right span ,
 }
 
 body.dark #toggleBtn{
-  background-color: rgb(180, 35, 151);
-  color: white;
+  background-color: white;
+  color: black;
 }
 
 body.dark .highlight , .dark .page2text{

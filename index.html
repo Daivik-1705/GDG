@@ -12,18 +12,25 @@
       <div class="diamond"></div>
       <span>Skilline</span>
     </div>
+    <div class="toogle">
+        <button id="toggleBtn">
+            🌙&emsp;Dark mode
+        </button>
+    </div>
+    <div class="upper">
     <ul class="nav-links">
       <li>Home</li>
       <li>Careers</li>
       <li>Blog</li>
       <li>About Us</li>
     </ul>
+    </div>
     <div class="nav-buttons">
       <button class="login-btn">Login</button>
       <button class="signup-btn">Sign Up</button>
     </div>
     </nav>
-    <section class="hero">
+<section class="hero">
   <div class="hero-text">
     <h1>
       <span class="highlight">Studying</span> Online is now<br> much easier
@@ -39,9 +46,9 @@
 
   <div class="hero-image">
     <img src="girl.png" alt="Student" class="image">
-    <div class="badge top-left"><img src="Group 6.png" class="group6">  250k  <br><span>Assisted Student</span></div>
+    <div class="badge top-left"><img src="Group 6.png" class="group6">  250k <br> <span>    Assisted Student   </span></div>
     <div class="badge bottom-left"><img src="Ellipse.png" class="ellipse">User Experience Class<br><span>Today at 12:00 PM</span> <button>Join Now</button></div>
-    <div class="badge bottom-right"><img src="email.png" class="email"> Congratulations   <br>  <span>Your admission is completed</span></div>
+    <div class="badge bottom-right"><img src="email.png" class="email"> Congratulations   <br>  <span>  Your admission is completed  </span></div>
   </div>
 </section>
 <section class="hero-bottom">
@@ -230,6 +237,13 @@
   </div>
 </footer>
 
-<script src="project.js"></script>
+<script>
+    const btn = document.getElementById('toggleBtn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      const isDark = document.body.classList.contains("dark");
+      btn.textContent = isDark ? "🌞 Light mode" : "🌙 Dark Mode";
+    });
+</script>
 </body>
 </html>

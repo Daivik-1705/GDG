@@ -1160,3 +1160,14 @@ body.dark #toggleBtn{
 body.dark .highlight , .dark .page2text{
   color: rgb(180, 35, 151);
 }
+body.dark .badge.bottom-left button {
+  background-color: rgb(180, 35, 151) ;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}

@@ -159,6 +159,7 @@ body, html {
 }
 #toggleBtn{
   border-radius: 30px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.8);
 }
 .nav-links {
   list-style: none;
@@ -1155,6 +1156,7 @@ body.dark .hero-image .badge.bottom-left span , .dark .badge.bottom-right span ,
 body.dark #toggleBtn{
   background-color: white;
   color: black;
+  box-shadow: 0px 2px 10px rgb(241, 240, 240); 
 }
 
 body.dark .highlight , .dark .page2text{

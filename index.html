@@ -238,12 +238,28 @@
 </footer>
 
 <script>
-    const btn = document.getElementById('toggleBtn');
-    btn.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-      const isDark = document.body.classList.contains("dark");
-      btn.textContent = isDark ? "🌞 Light mode" : "🌙 Dark Mode";
-    });
+     const btn = document.getElementById('toggleBtn');
+
+// 1. Check localStorage on page load
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  document.body.classList.add("dark");
+  btn.textContent = "🌞 Light mode";
+} else {
+  btn.textContent = "🌙 Dark Mode";
+}
+
+// 2. Toggle button click event
+btn.addEventListener('click', () => {
+  document.body.classList.toggle('dark');
+
+  const isDark = document.body.classList.contains("dark");
+  btn.textContent = isDark ? "🌞 Light mode" : "🌙 Dark Mode";
+
+  // 3. Save choice to localStorage
+  localStorage.setItem("theme", isDark ? "dark" : "light");
+});
 </script>
 </body>
 </html>
+
